@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "partida": "Cierre provisorio y mitigaciones",
+    "unidad": "m2",
+    "cantidad": "3",
+    "valorunitario": "5000"
+  },
+  {
+    "id": 2,
+    "partida": "Andamios",
+    "unidad": "m2",
+    "cantidad": "15",
+    "valorunitario": "7000"
+  },
+  {
+    "id": 3,
+    "partida": "Construcciones provisorias",
+    "unidad": "m2",
+    "cantidad": "14",
+    "valorunitario": "5000"
+  },
+  {
+    "id": 4,
+    "partida": "Energía y servicios",
+    "unidad": "un",
+    "cantidad": "1",
+    "valorunitario": "70000"
+  },
+  {
+    "id": 5,
+    "partida": "Demoliciones",
+    "unidad": "m2",
+    "cantidad": "150",
+    "valorunitario": "2500"
+  }
+]
