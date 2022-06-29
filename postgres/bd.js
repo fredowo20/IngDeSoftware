@@ -63,10 +63,22 @@ const getPresupuestos3 = (name) => {
   }) 
 }
 
+const getPresupuestos4 = (usuario) => {
+  return new Promise(function(resolve, reject) {
+    pool.query('SELECT name FROM presupuestos WHERE usuario = $1 GROUP BY name ORDER BY name ASC', [usuario], (error, results) => {
+      if (error) {
+        reject(error)
+      }
+      resolve(results.rows);
+    })
+  }) 
+}
+
 module.exports = {
     getPresupuestos,
     createPresupuesto,
     deletePresupuesto,
     getPresupuestos2,
-    getPresupuestos3
+    getPresupuestos3,
+    getPresupuestos4
 }
