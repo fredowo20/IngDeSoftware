@@ -16,7 +16,7 @@ const TablaEdit = () => {
   }, []);
       
   function getPresupuestos() {
-    fetch(`http://localhost:3001/merchantt/owo`)
+    fetch(`http://localhost:3001/merchantt/${localStorage.getItem("name")}`)
       .then(response => {
         return response.text();
       })

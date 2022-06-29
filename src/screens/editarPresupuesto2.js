@@ -4,16 +4,9 @@ import { Nav } from 'react-bootstrap';
 import { Container } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { LogoutButton } from "../components/logout";
-import { Profile } from "../components/profile";
-import { useAuth0 } from "@auth0/auth0-react";
+import TablaEdit from "../components/TablaEdit";
 
-function Home() {
-  
-  const { user, isAuthenticated } = useAuth0();
-
-  if (isAuthenticated) {
-    window.localStorage.setItem("usuario", user.email)
-  }
+function editarPresupuesto2() {
   return (
       <React.Fragment>
         <Navbar bg="black" variant="dark">
@@ -32,13 +25,12 @@ function Home() {
         </Navbar>
         
         <div className="MensajeSinLogear">
-        <h1> Bienvenid@ </h1>
-        <Profile/>
-    
-        <h3> En la barra de navegación podrá encontrar todas las opciones</h3>
+        <h1> Editar Presupuesto </h1>
+        <div className="espacio"></div>
+        <TablaEdit />
         </div>
       </React.Fragment>
   );
 }
 
-export default Home;
+export default editarPresupuesto2;

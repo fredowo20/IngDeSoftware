@@ -17,7 +17,7 @@ function EditarPresupuesto() {
               <Nav className="me-auto">
                   <Nav.Link href="/crearPresupuesto">Crear Presupuesto</Nav.Link>
                   <Nav.Link href="/presupuestosAnteriores">Presupuestos Anteriores</Nav.Link>
-                  <Nav.Link>Crear Estadísticas</Nav.Link>
+                  <Nav.Link href="/editarPresupuesto">Editar Presupuesto</Nav.Link>
                   <LogoutButton/>
               </Nav>
               </Navbar.Collapse>

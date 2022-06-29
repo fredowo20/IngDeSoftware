@@ -4,7 +4,7 @@ import { Nav } from 'react-bootstrap';
 import { Container } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { LogoutButton } from "../components/logout";
-import TablaEdit from "../components/TablaEdit";
+import PresupuestoEdit from "../components/PresupuestoEdit";
 
 function editarPresupuesto() {
   return (
@@ -17,7 +17,7 @@ function editarPresupuesto() {
             <Nav className="me-auto">
                 <Nav.Link href="/crearPresupuesto">Crear Presupuesto</Nav.Link>
                 <Nav.Link href="/presupuestosAnteriores">Presupuestos Anteriores</Nav.Link>
-                <Nav.Link>Crear Estadísticas</Nav.Link>
+                <Nav.Link href="/editarPresupuesto">Editar Presupuesto</Nav.Link>
                 <LogoutButton/>
             </Nav>
             </Navbar.Collapse>
@@ -27,7 +27,7 @@ function editarPresupuesto() {
         <div className="MensajeSinLogear">
         <h1> Editar Presupuesto </h1>
         <div className="espacio"></div>
-        <TablaEdit />
+        <PresupuestoEdit />
         </div>
       </React.Fragment>
   );
