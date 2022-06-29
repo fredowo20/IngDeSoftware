@@ -7,8 +7,10 @@ export const LogoutButton = () => {
   //localStorage._deleteLocation()
 
   return (
+    <div className="cerrarsesion">
     <Button variant="contained" onClick={() => logout({ returnTo: window.location.href="http://localhost:3000/" })}>
       Cerrar sesión
     </Button>
+    </div>
   );
 };

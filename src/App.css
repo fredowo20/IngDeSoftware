@@ -52,3 +52,9 @@
 .espacio{
   padding-top: 20px;
 }
+
+.cerrarsesion{
+  position: absolute;
+  right: 0;
+  padding-right: 10px;
+}

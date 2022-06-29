@@ -210,6 +210,17 @@ const TablaEdit = () => {
     }
   };
 
+  const handleTotalPreupuesto = () => {
+    let sum=0;
+    contacts.map((contact)=>
+    {
+      sum=sum+(parseInt(contact.valorunitario)*parseInt(contact.cantidad))
+      return sum
+    }
+    )
+    return sum
+  };
+
 
   return (
     
@@ -255,6 +266,7 @@ const TablaEdit = () => {
                 )}
               </Fragment>
             ))}
+            <th>Total Presupuesto</th><th></th><th></th><th></th><th>{handleTotalPreupuesto()}</th><th></th>
           </tbody>
         </Table>
       </form>
